@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageButton
+        android:id="@+id/whatsappPhoneImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="204dp"
+        android:background="@drawable/custom_icon_button2"
+        android:src="@drawable/ic_phone"
+        app:layout_constraintBottom_toBottomOf="@+id/whatsappImage"
+        app:layout_constraintStart_toEndOf="@+id/whatsappImage"
+        app:layout_constraintTop_toTopOf="@+id/whatsappImage"
+        app:layout_constraintVertical_bias="0.75"
+        android:contentDescription="@string/todo" />
+
+    <ImageButton
+        android:id="@+id/telegramMessageImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/custom_icon_button2"
+        android:src="@drawable/ic_chat"
+        app:layout_constraintBottom_toBottomOf="@+id/telegramPhoneImage"
+        app:layout_constraintStart_toEndOf="@+id/telegramPhoneImage"
+        app:layout_constraintTop_toTopOf="@+id/telegramPhoneImage"
+        app:layout_constraintVertical_bias="1.0"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/telegramTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/telegram"
+        android:textColor="@color/light_text"
+        app:layout_constraintBottom_toBottomOf="@+id/telegramImage"
+        app:layout_constraintStart_toEndOf="@+id/telegramImage"
+        app:layout_constraintTop_toTopOf="@+id/telegramImage"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/emailText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/user_name"
+        android:textColor="@color/dark_text"
+        app:layout_constraintEnd_toEndOf="@+id/telegramTextView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/telegramTextView"
+        app:layout_constraintTop_toBottomOf="@+id/telegramTextView" />
+
+    <ImageButton
+        android:id="@+id/telegramPhoneImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="204dp"
+        android:background="@drawable/custom_icon_button2"
+        android:src="@drawable/ic_phone"
+        app:layout_constraintBottom_toBottomOf="@+id/telegramImage"
+        app:layout_constraintStart_toEndOf="@+id/telegramImage"
+        app:layout_constraintTop_toTopOf="@+id/telegramImage"
+        app:layout_constraintVertical_bias="0.75"
+        android:contentDescription="@string/todo"/>
+
+    <ImageButton
+        android:id="@+id/contactMessageImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/custom_icon_button2"
+        android:src="@drawable/ic_chat"
+        app:layout_constraintBottom_toBottomOf="@+id/contactPhoneImage"
+        app:layout_constraintStart_toEndOf="@+id/contactPhoneImage"
+        app:layout_constraintTop_toTopOf="@+id/contactPhoneImage"
+        app:layout_constraintVertical_bias="1.0"
+        android:contentDescription="@string/todo"/>
+
+    <TextView
+        android:id="@+id/whatsappTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/whatsapp"
+        android:textColor="@color/light_text"
+        app:layout_constraintBottom_toBottomOf="@+id/whatsappImage"
+        app:layout_constraintStart_toEndOf="@+id/whatsappImage"
+        app:layout_constraintTop_toTopOf="@+id/whatsappImage"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/emailText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/email"
+        android:textColor="@color/dark_text"
+        app:layout_constraintEnd_toEndOf="@+id/emailTextView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/emailTextView"
+        app:layout_constraintTop_toBottomOf="@+id/emailTextView" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:background="@color/light_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custom_icon_button"
+            android:padding="5dp"
+            android:src="@drawable/ic_left"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/todo"/>
+
+    </LinearLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="-48dp"
+        android:src="@drawable/profile_picture"
+        app:civ_border_color="@color/border"
+        app:civ_border_width="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/user_name"
+        android:textColor="@color/dark_text"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/user_country"
+        android:textColor="@color/light_text"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/main_blue"
+        android:text="@string/detail"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginEnd="8dp"
+        app:chipCornerRadius="10dp"
+        app:chipEndPadding="50dp"
+        app:chipStartPadding="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/chip2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+    </com.google.android.material.chip.Chip>
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip2"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/main_blue"
+        android:text="@string/history"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:chipCornerRadius="10dp"
+        app:chipEndPadding="50dp"
+        app:chipStartPadding="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageButton
+        android:id="@+id/contactPhoneImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="204dp"
+        android:background="@drawable/custom_icon_button2"
+        android:src="@drawable/ic_phone"
+        app:layout_constraintBottom_toBottomOf="@+id/contactImage"
+        app:layout_constraintStart_toEndOf="@+id/contactImage"
+        app:layout_constraintTop_toTopOf="@+id/contactImage"
+        app:layout_constraintVertical_bias="0.75"
+        android:contentDescription="@string/todo"/>
+
+
+
+
+
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/email"
+        android:textColor="@color/light_text"
+        app:layout_constraintBottom_toBottomOf="@+id/emailImage"
+        app:layout_constraintStart_toEndOf="@+id/emailImage"
+        app:layout_constraintTop_toTopOf="@+id/emailImage"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/emailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="adi sucipto"
+        android:textColor="@color/dark_text"
+        app:layout_constraintEnd_toEndOf="@+id/whatsappTextView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/whatsappTextView"
+        app:layout_constraintTop_toBottomOf="@+id/whatsappTextView" />
+
+    <TextView
+        android:id="@+id/contactTextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/contact"
+        android:textColor="@color/light_text"
+        app:layout_constraintBottom_toBottomOf="@+id/contactImage"
+        app:layout_constraintStart_toEndOf="@+id/contactImage"
+        app:layout_constraintTop_toTopOf="@+id/contactImage"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <ImageButton
+        android:id="@+id/whatsappMessageImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/custom_icon_button2"
+        android:src="@drawable/ic_chat"
+        app:layout_constraintBottom_toBottomOf="@+id/whatsappPhoneImage"
+        app:layout_constraintStart_toEndOf="@+id/whatsappPhoneImage"
+        app:layout_constraintTop_toTopOf="@+id/whatsappPhoneImage"
+        app:layout_constraintVertical_bias="0.0"
+        android:contentDescription="@string/todo"/>
+
+    <ImageButton
+        android:id="@+id/contactImage"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/custom_icon_button2"
+        android:backgroundTint="@color/icon_green"
+        android:src="@drawable/ic_user"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chip"
+        android:contentDescription="@string/todo"/>
+
+    <TextView
+        android:id="@+id/contactTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/contact"
+        android:textColor="@color/light_text"
+        app:layout_constraintBottom_toBottomOf="@+id/contactImage"
+        app:layout_constraintStart_toEndOf="@+id/contactImage"
+        app:layout_constraintTop_toTopOf="@+id/contactImage"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/contactText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="+628 9012356"
+        android:textColor="@color/dark_text"
+        app:layout_constraintEnd_toEndOf="@+id/contactTextView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/contactTextView"
+        app:layout_constraintTop_toBottomOf="@+id/contactTextView" />
+
+
+    <ImageButton
+        android:id="@+id/emailImage"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_icon_button2"
+        android:backgroundTint="@color/email_red"
+        android:src="@drawable/ic_email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactImage"
+        android:contentDescription="@string/todo"/>
+
+
+    <ImageButton
+        android:id="@+id/emailMessageImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="260dp"
+        android:background="@drawable/custom_icon_button2"
+        android:src="@drawable/ic_chat"
+        app:layout_constraintBottom_toBottomOf="@+id/emailImage"
+        app:layout_constraintStart_toEndOf="@+id/emailImage"
+        app:layout_constraintTop_toTopOf="@+id/emailImage"
+        app:layout_constraintVertical_bias="1.0"
+        android:contentDescription="@string/todo"/>
+
+
+    <ImageButton
+        android:id="@+id/whatsappImage"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_icon_button2"
+        android:backgroundTint="@color/icon_green"
+        android:src="@drawable/ic_whatsapp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailImage"
+        android:contentDescription="@string/todo"/>
+
+    <ImageButton
+        android:id="@+id/telegramImage"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_icon_button2"
+        android:backgroundTint="@color/telegram_blue"
+        android:src="@drawable/ic_telegram"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/whatsappImage"
+        android:contentDescription="@string/todo"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
